@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Dominik Böhler"
 theme  = "LoveIt"
 publishDir = "docs"
+enableGitInfo = true
+gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
 
 [params.cdn]
   # CDN data file name, disabled by default
@@ -17,6 +19,85 @@ publishDir = "docs"
 [params]
   # LoveIt theme version
   version = "0.2.X"
+  description = "Digital, Health, and Mobility"
+  images = ["/logo.png"]
+
+[params.app]
+    # whether to omit favicon resource links
+    noFavicon = false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    svgFavicon = ""
+    # Android browser theme color
+    themeColor = "#ffffff"
+    # Safari mask icon color
+    iconColor = "#5bbad5"
+    # Windows v8-10 tile color
+    tileColor = "#da532c"
+
+ # LoveIt CHANGED | 0.2.0 Page config
+  [params.page]
+    # LoveIt NEW | 0.2.0 whether to hide a page from home page
+    hiddenFromHomePage = false
+    # LoveIt NEW | 0.2.0 whether to hide a page from search results
+    hiddenFromSearch = false
+    # LoveIt NEW | 0.2.0 whether to enable twemoji
+    twemoji = true
+    # whether to enable lightgallery
+    lightgallery = true
+    # LoveIt NEW | 0.2.0 whether to enable the ruby extended syntax
+    ruby = true
+    # LoveIt NEW | 0.2.0 whether to enable the fraction extended syntax
+    fraction = false
+    # LoveIt NEW | 0.2.0 whether to enable the fontawesome extended syntax
+    fontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = false
+    # LoveIt NEW | 0.2.4 whether to show the full text content in RSS
+    rssFullText = true
+    # LoveIt NEW | 0.2.0 Table of the contents config
+    [params.page.toc]
+      # whether to enable the table of the contents
+      enable = true
+      # LoveIt NEW | 0.2.9 whether to keep the static table of the contents in front of the post
+      keepStatic = true
+      # whether to make the table of the contents in the sidebar automatically collapsed
+      auto = true
+    # LoveIt CHANGED | 0.2.0 KaTeX mathematical formulas
+    [params.page.math]
+      enable = true
+      # default block delimiter is $$ ... $$ and \\[ ... \\]
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      # default inline delimiter is $ ... $ and \\( ... \\)
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      # KaTeX extension copy_tex
+      copyTex = true
+      # KaTeX extension mhchem
+      mhchem = true
+    # LoveIt NEW | 0.2.0 Code config
+    [params.page.code]
+      # whether to show the copy button of the code block
+      copy = true
+      # the maximum number of lines of displayed code by default
+      maxShownLines = 10
+
+[params.home.profile]
+  enable = true
+  # Gravatar Email for preferred avatar in home page
+  gravatarEmail = "dominik.boehler@gmx.net"
+  # URL of avatar shown in home page
+  avatarURL = "/images/avatar.png"
+  # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+  title = "Hello!"
+  # subtitle shown in home page
+  subtitle = "Digital, Health, and Mobility"
+  # whether to use typeit animation for subtitle
+  typeit = true
+  # whether to show social links
+  social = true
+  # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+  disclaimer = ""
 
 [menu]
   [[menu.main]]
@@ -73,7 +154,26 @@ publishDir = "docs"
   highlightTag = "em"
   # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
   absoluteURL = false
+
   [params.search.algolia]
     index = "index.json"
     appID = "8LWU3NIHJC"
     searchKey = "57c2a24d5895812c8ed3b1b83218e7d3"
+
+  # LoveIt NEW | 0.2.0 Analytics config
+  [params.analytics]
+    enable = false
+    # Google Analytics
+    [params.analytics.google]
+      id = "UA-133748236-1"
+      # whether to anonymize IP
+      anonymizeIP = true
+
+  # LoveIt NEW | 0.2.7 Cookie consent config
+  [params.cookieconsent]
+    enable = false
+    # text strings used for Cookie consent banner
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""

@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Dominik Böhler</title>
+        <link>https://dominikboehler.de/posts/</link>
+        <description>All Posts | Dominik Böhler</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 Mar 2021 10:34:51 &#43;0100</lastBuildDate><atom:link href="https://dominikboehler.de/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>First Post</title>
+    <link>https://dominikboehler.de/posts/first-post/</link>
+    <pubDate>Tue, 02 Mar 2021 10:34:51 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://dominikboehler.de/posts/first-post/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
