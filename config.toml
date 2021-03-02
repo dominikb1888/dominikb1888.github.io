@@ -12,7 +12,7 @@ publishDir = "docs"
 [params.social]
   Twitter = "@dominikb1888"
   LinkedIn = "@dominikb1888"
-  GitHub = "dominikb1888"
+  GitHub = "@dominikb1888"
 
 [params]
   # LoveIt theme version
