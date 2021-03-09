@@ -12,9 +12,24 @@ gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
   data = ""
 
 [params.social]
-  Twitter = "@dominikb1888"
-  LinkedIn = "@dominikb1888"
-  GitHub = "@dominikb1888"
+  Twitter = "dominikb1888"
+  LinkedIn = "dominikb1888"
+  GitHub = "dominikb1888"
+
+# Author config
+[author]
+  name = "Dominik Böhler"
+  email = "info@dominikboehler.de"
+
+# Sitemap config
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Permalinks config
+[Permalinks]
+  posts = ":year/:month/:filename"
 
 [params]
   # LoveIt theme version
@@ -82,6 +97,25 @@ gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
       # the maximum number of lines of displayed code by default
       maxShownLines = 10
 
+# Footer config
+  [params.footer]
+    enable = true
+    # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
+    custom = '<a href="/legal-notice">Legal Notice</a>'
+    # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
+    hugo = false
+    # LoveIt NEW | 0.2.0 whether to show copyright info
+    copyright = true
+    # LoveIt NEW | 0.2.0 whether to show the author
+    author = true
+    # Site creation time
+    since = 2021
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+
 [params.home.profile]
   enable = true
   # Gravatar Email for preferred avatar in home page
@@ -112,22 +146,14 @@ gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
     title = ""
     weight = 1
   [[menu.main]]
-    identifier = "tags"
+    identifier = "about"
     pre = ""
     post = ""
-    name = "Tags"
-    url = "/tags/"
+    name = "About"
+    url = "/about"
     title = ""
     weight = 2
-  [[menu.main]]
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
-    weight = 3
-
+  
 # Markup related configuration in Hugo
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
@@ -174,6 +200,29 @@ gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
     enable = false
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
-      message = ""
+      message = "This site uses cookies, please accept"
       dismiss = ""
       link = ""
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false
