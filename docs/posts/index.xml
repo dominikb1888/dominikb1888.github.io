@@ -3,12 +3,13 @@
         <title>All Posts - Dominik Böhler</title>
         <link>https://dominikboehler.de/posts/</link>
         <description>All Posts | Dominik Böhler</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 Mar 2021 10:34:51 &#43;0100</lastBuildDate><atom:link href="https://dominikboehler.de/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>info@dominikboehler.de (Dominik Böhler)</managingEditor>
+            <webMaster>info@dominikboehler.de (Dominik Böhler)</webMaster><lastBuildDate>Tue, 02 Mar 2021 10:34:51 &#43;0100</lastBuildDate><atom:link href="https://dominikboehler.de/posts/" rel="self" type="application/rss+xml" /><item>
     <title>First Post</title>
-    <link>https://dominikboehler.de/posts/first-post/</link>
+    <link>https://dominikboehler.de/2021/03/first-post/</link>
     <pubDate>Tue, 02 Mar 2021 10:34:51 &#43;0100</pubDate>
     <author>Author</author>
-    <guid>https://dominikboehler.de/posts/first-post/</guid>
+    <guid>https://dominikboehler.de/2021/03/first-post/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
