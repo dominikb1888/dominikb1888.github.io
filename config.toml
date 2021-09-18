@@ -1,20 +1,36 @@
 baseURL = "https://dominikboehler.de"
 languageCode = "en-us"
 title = "Dominik Böhler"
-theme  = "LoveIt"
+theme  = "archie"
 publishDir = "docs"
+copyright = "Dominik Boehler"
 enableGitInfo = true
 gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
 
-[params.cdn]
-  # CDN data file name, disabled by default
-  # ("jsdelivr.yml")
-  data = ""
+# Code Highlighting
+pygmentstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+paginate=5 # articles per page
 
-[params.social]
-  Twitter = "dominikb1888"
-  LinkedIn = "dominikb1888"
-  GitHub = "dominikb1888"
+  mode = "auto"
+  subtitle = "Let's challenge the state of health and education"
+
+
+[[params.social]]
+  name = "Twitter"
+  icon =  "twitter"
+  url = "https://twitter.com/dominikb1888"
+
+[[params.social]]
+  name = "LinkedIN"
+  icon = "linkedin"
+  url = "https://linkedin.com/in/dominikb1888"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "github"
+  url = "https://github.com/dominikb1888"
 
 # Author config
 [author]
@@ -133,27 +149,20 @@ gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
   # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
   disclaimer = ""
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    post = ""
-    name = "Posts"
-    url = "/posts/"
-    # title will be shown when you hover on this menu link
-    title = ""
-    weight = 1
-  [[menu.main]]
-    identifier = "about"
-    pre = ""
-    post = ""
-    name = "About"
-    url = "/about"
-    title = ""
-    weight = 2
-  
+ [[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
 # Markup related configuration in Hugo
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)

@@ -1,8 +1,13 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Tags - Tag - Dominik Böhler</title>
-        <link>https://dominikboehler.de/tags/</link>
-        <description>Tags - Tag - Dominik Böhler</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>info@dominikboehler.de (Dominik Böhler)</managingEditor>
-            <webMaster>info@dominikboehler.de (Dominik Böhler)</webMaster><atom:link href="https://dominikboehler.de/tags/" rel="self" type="application/rss+xml" /></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Dominik Böhler</title>
+    <link>https://dominikboehler.de/tags/</link>
+    <description>Recent content in Tags on Dominik Böhler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>info@dominikboehler.de (Dominik Böhler)</managingEditor>
+    <webMaster>info@dominikboehler.de (Dominik Böhler)</webMaster>
+    <copyright>Dominik Boehler</copyright><atom:link href="https://dominikboehler.de/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
 </rss>
