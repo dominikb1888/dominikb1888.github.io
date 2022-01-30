@@ -1,1 +1,0 @@
-refactoring-post/python/comment_2.md

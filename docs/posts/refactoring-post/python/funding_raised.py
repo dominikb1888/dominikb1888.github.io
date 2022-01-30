@@ -7,17 +7,11 @@ class DealSearch:
         with open(filepath, "rt") as csvfile:
             self.data = [row for row in csv.DictReader(csvfile)]
 
-    def _filter(self, options: dict, op: str) -> Generator:
-        match op:
-            case['and']:
-                return (row for row in self.data if row | options == row)
-            case['or']:
-                return (row for row in self.data if row & options == row)
-            case['xor']:
-                return (row for row in self.data if row ^ options == row)
+    def _filter(self, options: dict) -> Generator:
+        return (row for row in self.data if row | options == row)
 
-    def where(self, options: dict = {}, op: str = 'and') -> list:
-        return list(DealSearch._filter(self, options, op))
+    def where(self, options: dict = {}) -> list:
+        return list(DealSearch._filter(self, options))
 
-    def find_by(self, options: dict = {}, op: str = 'and') -> list:
-        return next(DealSearch._filter(self, options, op))
+    def find_by(self, options: dict = {}) -> list:
+        return next(DealSearch._filter(self, options))

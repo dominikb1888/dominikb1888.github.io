@@ -31,16 +31,6 @@ Feel free reach out to me on other platforms:
     
     <item>
       <title></title>
-      <link>https://dominikboehler.de/1/01/refactoring-post-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>info@dominikboehler.de (Dominik Böhler)</author>
-      <guid>https://dominikboehler.de/1/01/refactoring-post-1/</guid>
-      <description>Stage 1 - Understand the objectives and making it DRY After cleaning the direct and obvious formal flaws from the code (Indenting according to PEP8 with 4 Spaces and an unused variable: https://www.python.org/dev/peps/pep-0008/), it is about understanding the business objectives of the code and understanding what is a repetition and what is potentially business logic, i.e. unclean, but still intended.
-Business Logic DRYing up on block level The code is Class with @staticmethod decorators, this means that we do not need to create an object to access the class methods.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://dominikboehler.de/1/01/comment_1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>info@dominikboehler.de (Dominik Böhler)</author>
@@ -51,31 +41,12 @@ Business Logic DRYing up on block level The code is Class with @staticmethod dec
     
     <item>
       <title></title>
-      <link>https://dominikboehler.de/1/01/refactoring-post-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>info@dominikboehler.de (Dominik Böhler)</author>
-      <guid>https://dominikboehler.de/1/01/refactoring-post-2/</guid>
-      <description>The cleaning story continued - Built-Ins are coming! In the first post, we looked at cleaning our code on the block level. We identified two import blocks we moved to a separate function, several similar blocks of mappings we replaced with a for loop.
-In this post, we will look at the next level of granularity. We will check the code for further repetitions and see where code style can be improved to become less imperative.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://dominikboehler.de/1/01/comment_2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>info@dominikboehler.de (Dominik Böhler)</author>
       <guid>https://dominikboehler.de/1/01/comment_2/</guid>
       <description>The cleaning story continued - Built-Ins are coming! In the first post, we looked at cleaning our code on the block level. We identified two import blocks we moved to a separate function, several similar blocks of mappings we replaced with a for loop.
 In this post, we will look at the next level of granularity. We will check the code for further repetitions and see where code style can be improved to become less imperative.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://dominikboehler.de/1/01/refactoring-post-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>info@dominikboehler.de (Dominik Böhler)</author>
-      <guid>https://dominikboehler.de/1/01/refactoring-post-3/</guid>
-      <description>From chaos to code - Embeding Type Checking, Exensibility, and Security In our previous posts we went through a horrible piece of code and cleaned it (DRY principle) and create a stronger OOP logic. In itself the code is good and clean. Still it has substantial flaws, if we look at it from the outside. What happens, if we would like to employ a different search strategy but a union search on all options?</description>
     </item>
     
     <item>

@@ -116,9 +116,9 @@ result.append(row)</p>
     csv_data = result
 </code></pre>
 <p>´´´</p>
-<p>Ui, ui. So basically our brief search implementation needs to keep a strict register of our column order to work. Otherwise we would not be able to match our users search request to the right column in our list of lists (aka a very bad version of a database).</p>
+<p>Ui, ui. So basically our brief search implementation needs to keep a strict <a href="register">register</a> of our column order to work. Otherwise we would not be able to match our users search request to the right column in our list of lists (aka a very bad version of a database).</p>
 <p>I wonder what happens, if we remove the check for only these 4 columns and allow for all. If our test cases, which are describing the business logic do not test for any edge case here, we could just throw this line out. So, let&rsquo;s do this!</p>
-<p>{{gist 511582066f7e2b0c7f7ef0362f633222}}</p>
+<p>{{&gt; gist 511582066f7e2b0c7f7ef0362f633222 &lt;}}</p>
 <p>The code passes all tests without any issues. This means either the code was implementing something the client never wanted or the product manager didn&rsquo;t specify a proper test suite. For us this does not matter for the moment. Our concern is making all tests pass.</p>
 <p>Let&rsquo;s reflect on this code though. It looks a lot cleaner now, but a lot more as also become useless. Our Checking block is still necessary. However, the mapping block after needs to be questioned. If there is no need to check the options for certain column headers, which reason does the separation of headers and code have. Why would we need to map that code into a list of dicts in our final step in the function? Not at all, correct. We could start using a list of dicts right from the start and filter each line.</p>
 <h2 id="functions-from-heaven---csvdictreader">Functions from Heaven - csv.DictReader()</h2>
@@ -163,7 +163,7 @@ union = dict(dict1.items() | dict2.items())
 difference = dict(dict1.items() ^ dict2.items())
 ´´´</p>
 <p>After some cleanup our code looks like this:</p>
-<p>{{gist f6912fd5617cd38be9843d1b35c6bd50 }}</p>
+<p>{{&gt; gist f6912fd5617cd38be9843d1b35c6bd50 &lt;}}</p>
 <p>We moved the comprehension statement from our two functions into one staticmethod _filter which get&rsquo;s the data, filters it and returns a generator. We can render this generator as a list (where() function) or return the first item from it (next() in find_by() function).</p>
 <p>Pretty clean now?
 In the next post we are extending the use case and will add some more Quality. Let&rsquo;s focus some more on patterns to secure professional code and safety a lot more.</p>
