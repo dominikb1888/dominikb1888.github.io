@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title> - Dominik Böhler</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="The cleaning story continued - Built-Ins are coming! In the first post, we looked at cleaning our code on the block level. We identified two import blocks we moved to a separate function, several similar blocks of mappings we replaced with a for loop.
+In this post, we will look at the next level of granularity. We will check the code for further repetitions and see where code style can be improved to become less imperative." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="" />
+<meta property="og:description" content="The cleaning story continued - Built-Ins are coming! In the first post, we looked at cleaning our code on the block level. We identified two import blocks we moved to a separate function, several similar blocks of mappings we replaced with a for loop.
+In this post, we will look at the next level of granularity. We will check the code for further repetitions and see where code style can be improved to become less imperative." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dominikboehler.de/1/01/comment_2/" /><meta property="og:image" content="https://dominikboehler.de/logo.png"/><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dominikboehler.de/logo.png"/>
+
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="The cleaning story continued - Built-Ins are coming! In the first post, we looked at cleaning our code on the block level. We identified two import blocks we moved to a separate function, several similar blocks of mappings we replaced with a for loop.
+In this post, we will look at the next level of granularity. We will check the code for further repetitions and see where code style can be improved to become less imperative."/>
+<script src="https://dominikboehler.dejs/feather.min.js"></script>
+	
+	
+        <link href="https://dominikboehler.de/css/fonts.bc4e25f0808dd73fe23ca2c7770ea2c2172340602ee10a2b27d5fdbbf14e36b4.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://dominikboehler.de/css/main.a270e008d6cbbeba8ce9a2e6dbfa4ea739e5b3440839b1e1cdcbefe87dbc693b.css" />
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://dominikboehler.de">Dominik Böhler</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title"></h1>
+			<div class="meta">Posted on Jan 1, 0001</div>
+		</div>
+		
+
+		<section class="body">
+			<h1 id="the-cleaning-story-continued---built-ins-are-coming">The cleaning story continued - Built-Ins are coming!</h1>
+<p>In the first post, we looked at cleaning our code on the block level. We identified two import blocks we moved to a separate function, several similar blocks of mappings we replaced with a for loop.</p>
+<p>In this post, we will look at the next level of granularity. We will check the code for further repetitions and see where code style can be improved to become less imperative.</p>
+<p>This will require some more thinking toward what the code does or tries to achieve. Therefore we look at the data structures and their transformations first. The best way to do this quickly and to also see iteratively how things change is in a Jupyter Notebook.</p>
+<p>We look at three Transformations:</p>
+<ol>
+<li>CSV -&gt; csv_data</li>
+<li>csv_data to mapped</li>
+<li>mapped to output</li>
+</ol>
+<h2 id="csv-import">CSV Import</h2>
+<p>The CSV Import has been moved to a separate function. Here is our snippet again:</p>
+<p>´´´{python}</p>
+<p>class FundingRaised:
+def _import_csv(filepath=&quot;../startup_funding.csv&quot;):
+with open(filepath, &ldquo;rt&rdquo;) as csvfile:
+data = csv.reader(csvfile, delimiter=&quot;,&quot;, quotechar='&quot;')
+# skip header
+next(data)
+csv_data = []
+for row in data:
+csv_data.append(row)</p>
+<pre><code>return csv_data
+</code></pre>
+<p>´´´</p>
+<p>A CSV file is a set of lines with comma-separated content. Usually there is a header line in line 1 and content in all following lines. With linear reading, we will thus receive lines represented as list of elements. We are checking just the commands inside our functions:</p>
+<p>´´´{Python}
+import csv</p>
+<p>with open(&quot;../startup_funding.csv&quot;, &ldquo;rt&rdquo;) as csvfile:
+data = csv.reader(csvfile, delimiter=&quot;,&quot;, quotechar='&quot;')
+# skip header
+next(data)
+csv_data = []
+for row in data:
+csv_data.append(row)</p>
+<p>csv_data</p>
+<p>´´´</p>
+<p>The only change to the previous code snippet is that we remove the function name and return value. Instead we reference the csv file directly and call the variable csv_data directly to see the output. Don&rsquo;t forget to import the csv module in the code cell you are using.</p>
+<p>If we analyze the output we can see that we receive a list of list with no headers. This is the first hint to problems in the code. Why would I remove the headers from a table on import just to remap them later. Very weird. Let&rsquo;s try to verify this assumption by checking the next steps!</p>
+<h2 id="csv_data---mapped">csv_data -&gt; mapped</h2>
+<p>How does the transformation of our list continue? Let&rsquo;s look the where function first.</p>
+<p>The first step in this transformation is a filter operation, and a weird one two. We need to remap the position of our original header (we placed this information in a dict to clean up before) to the position in our list. I added comments to each line of code in plain English.</p>
+<p>´´´´{Python}</p>
+<h1 id="we-need-to-keep-an-order-of-the-columns-to-make-sure-we-can-remap-that-to-the-content-our-csv_data-list-of-lists">We need to keep an order of the columns to make sure we can remap that to the content our csv_data list of lists.</h1>
+<p>columns_dict = {1: &ldquo;company_name&rdquo;, 4: &ldquo;city&rdquo;, 5: &ldquo;state&rdquo;, 9: &ldquo;round&rdquo;}</p>
+<h1 id="to-filter-we-need-to-first-check-for-all-options-in-above-dict-apparently-our-users-arent-allowed-to-search-for-something-else-this-is-business-logic-we-will-discuss-this-later">To filter we need to first check for all options in above dict. Apparently our users aren&rsquo;t allowed to search for something else. This is business logic. We will discuss this later!</h1>
+<p>for key, column in columns_dict.items():
+# We will only take columns from the options dict our user passes that match our columns_dict above.
+if column in options:
+# Create a temp list to hold our filtered results
+result = []
+for row in csv_data:
+# Let&rsquo;s iterate through our csv_data and see if the search term from our users options occurs in the right column within our csv_data
+if row[key] == options[column]:
+# if yes, we append this to our result list, i.e. a valid search result!
+result.append(row)</p>
+<pre><code>    # We overwrite our csv_data Variable, with our search result, mmmmmm                
+    csv_data = result
+</code></pre>
+<p>´´´</p>
+<p>Ui, ui. So basically our brief search implementation needs to keep a strict register of our column order to work. Otherwise we would not be able to match our users search request to the right column in our list of lists (aka a very bad version of a database).</p>
+<p>I wonder what happens, if we remove the check for only these 4 columns and allow for all. If our test cases, which are describing the business logic do not test for any edge case here, we could just throw this line out. So, let&rsquo;s do this!</p>
+<p>{{gist 511582066f7e2b0c7f7ef0362f633222}}</p>
+<p>The code passes all tests without any issues. This means either the code was implementing something the client never wanted or the product manager didn&rsquo;t specify a proper test suite. For us this does not matter for the moment. Our concern is making all tests pass.</p>
+<p>Let&rsquo;s reflect on this code though. It looks a lot cleaner now, but a lot more as also become useless. Our Checking block is still necessary. However, the mapping block after needs to be questioned. If there is no need to check the options for certain column headers, which reason does the separation of headers and code have. Why would we need to map that code into a list of dicts in our final step in the function? Not at all, correct. We could start using a list of dicts right from the start and filter each line.</p>
+<h2 id="functions-from-heaven---csvdictreader">Functions from Heaven - csv.DictReader()</h2>
+<p>Thanks to everyone involved in the python standard library. The CSV Module contains a way to not only read a CSV into a list lists, but to transpose this into a list of dicts with column headers as keys, and data values as dict values. Just like this:</p>
+<p>´´´{Python}</p>
+<p>[
+{
+&lsquo;header1&rsquo;: &lsquo;value&rsquo;,
+&lsquo;header2&rsquo;: &lsquo;value&rsquo;,
+},
+{
+&lsquo;header1&rsquo;: &lsquo;value&rsquo;,
+&lsquo;header2&rsquo;: &lsquo;value&rsquo;,
+},</p>
+<h1 id="heading">&lt;&hellip;&gt;</h1>
+<p>]</p>
+<p>´´´</p>
+<p>Let&rsquo;s see which changes we need to apply to the code when using this approach. We receive a correctly transposed CSV Table as a list of dicts right after import. So, we can directly filter on each line of this list.</p>
+<p>First our new _import_csv() function:</p>
+<p>´´´{Python}</p>
+<p>def _import_csv(filepath=&quot;../startup_funding.csv&quot;):
+with open(filepath, &ldquo;rt&rdquo;) as csvfile:
+return [row for row in csv.DictReader(csvfile, delimiter=&quot;,&quot;, quotechar='&quot;')]
+´´´</p>
+<p>We added a little list comprehension to transform the Reader object containing a dict to a list of dicts. Just as we needed it. If we test this in our notebook, the output is fine. However, suddenly our tests do not pass anymore. Now this becomes interesting!</p>
+<p>Our for loop from before need to be able to filter through multiple columns - as many as the user passed to our function - and add the results to the result list. If we implement this in analogy to the previous expressive function, we discover that both where and find_by assume the presence of both options for a successful match (AND). We can translate this to make sure the options dictionary is a subset of the row while iterating through each row. How might we do this?</p>
+<p>´´´´{Python}</p>
+<p>[row for row in self.data if row | options == row]</p>
+<p>´´´</p>
+<p>As simple as the above one-liner! We can iterate through each row of our dataset and check if our options dict is an exact subset, i.e. all key-value-pairs in options match the corresponding key-value-pairs in our csv_data-row. This is the check we need for this:</p>
+<p>´´´´{Python}</p>
+<h1 id="comparing-two-dicts-using-bitwise-or-aka-pipe">Comparing two dicts using bitwise-or (aka Pipe)</h1>
+<p>(row | options) == row</p>
+<h1 id="alternative-using-tuples">Alternative using Tuples</h1>
+<p>options.items() &lt;= row.items()</p>
+<p>´´´</p>
+<p>[ ] The &ldquo;|&rdquo; operator can be used on Dicts since Python 3.9: <a href="https://www.python.org/dev/peps/pep-0584/">https://www.python.org/dev/peps/pep-0584/</a>. It allows creating the union of two dicts on both keys and values. If the options dict contains values also contained in the row dict, then both will be identical. If the options dict contains values that are not in the row dict, the row dicts values will be overwritten temporarily for the sake of comparing it to the original row dict. Obviously those do not match and hence the check fails.</p>
+<p>Other potential logical Operators would be</p>
+<p>´´´´{Python}
+intersection = dict(dict1.items() &amp; dict2.items())
+union = dict(dict1.items() | dict2.items())
+difference = dict(dict1.items() ^ dict2.items())
+´´´</p>
+<p>After some cleanup our code looks like this:</p>
+<p>{{gist f6912fd5617cd38be9843d1b35c6bd50 }}</p>
+<p>We moved the comprehension statement from our two functions into one staticmethod _filter which get&rsquo;s the data, filters it and returns a generator. We can render this generator as a list (where() function) or return the first item from it (next() in find_by() function).</p>
+<p>Pretty clean now?
+In the next post we are extending the use case and will add some more Quality. Let&rsquo;s focus some more on patterns to secure professional code and safety a lot more.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr><a class="soc" href="https://twitter.com/dominikb1888" title="Twitter"><i data-feather="twitter"></i></a>|<a class="soc" href="https://linkedin.com/in/dominikb1888" title="LinkedIN"><i data-feather="linkedin"></i></a>|<a class="soc" href="https://github.com/dominikb1888" title="GitHub"><i data-feather="github"></i></a>|⚡️
+	2022  Dominik Boehler |  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+<script>
+      feather.replace()
+</script></div>
+    </body>
+</html>
