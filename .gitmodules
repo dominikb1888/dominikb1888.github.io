@@ -1,6 +1,3 @@
 [submodule "themes/archie"]
 	path = themes/archie
 	url = https://github.com/athul/archie 
-[submodule "content/posts/refactoring-post"]
-	path = content/posts/refactoring-post
-	url = https://github.com/dominikb1888/refactoring-post
