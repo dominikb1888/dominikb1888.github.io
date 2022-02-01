@@ -68,7 +68,7 @@ In this post, we will look at the next level of granularity. We will check the c
 </ol>
 <h2 id="csv-import">CSV Import</h2>
 <p>The CSV Import has been moved to a separate function. Here is our snippet again:</p>
-<p>´´´{python}</p>
+<p>´´´python {}</p>
 <p>class FundingRaised:
 def _import_csv(filepath=&quot;../startup_funding.csv&quot;):
 with open(filepath, &ldquo;rt&rdquo;) as csvfile:
@@ -82,7 +82,7 @@ csv_data.append(row)</p>
 </code></pre>
 <p>´´´</p>
 <p>A CSV file is a set of lines with comma-separated content. Usually there is a header line in line 1 and content in all following lines. With linear reading, we will thus receive lines represented as list of elements. We are checking just the commands inside our functions:</p>
-<p>´´´{Python}
+<p>´´´ Python {}
 import csv</p>
 <p>with open(&quot;../startup_funding.csv&quot;, &ldquo;rt&rdquo;) as csvfile:
 data = csv.reader(csvfile, delimiter=&quot;,&quot;, quotechar='&quot;')
@@ -98,7 +98,7 @@ csv_data.append(row)</p>
 <h2 id="csv_data---mapped">csv_data -&gt; mapped</h2>
 <p>How does the transformation of our list continue? Let&rsquo;s look the where function first.</p>
 <p>The first step in this transformation is a filter operation, and a weird one two. We need to remap the position of our original header (we placed this information in a dict to clean up before) to the position in our list. I added comments to each line of code in plain English.</p>
-<p>´´´´{Python}</p>
+<p>´´´Python {}</p>
 <h1 id="we-need-to-keep-an-order-of-the-columns-to-make-sure-we-can-remap-that-to-the-content-our-csv_data-list-of-lists">We need to keep an order of the columns to make sure we can remap that to the content our csv_data list of lists.</h1>
 <p>columns_dict = {1: &ldquo;company_name&rdquo;, 4: &ldquo;city&rdquo;, 5: &ldquo;state&rdquo;, 9: &ldquo;round&rdquo;}</p>
 <h1 id="to-filter-we-need-to-first-check-for-all-options-in-above-dict-apparently-our-users-arent-allowed-to-search-for-something-else-this-is-business-logic-we-will-discuss-this-later">To filter we need to first check for all options in above dict. Apparently our users aren&rsquo;t allowed to search for something else. This is business logic. We will discuss this later!</h1>
@@ -123,7 +123,7 @@ result.append(row)</p>
 <p>Let&rsquo;s reflect on this code though. It looks a lot cleaner now, but a lot more as also become useless. Our Checking block is still necessary. However, the mapping block after needs to be questioned. If there is no need to check the options for certain column headers, which reason does the separation of headers and code have. Why would we need to map that code into a list of dicts in our final step in the function? Not at all, correct. We could start using a list of dicts right from the start and filter each line.</p>
 <h2 id="functions-from-heaven---csvdictreader">Functions from Heaven - csv.DictReader()</h2>
 <p>Thanks to everyone involved in the python standard library. The CSV Module contains a way to not only read a CSV into a list lists, but to transpose this into a list of dicts with column headers as keys, and data values as dict values. Just like this:</p>
-<p>´´´{Python}</p>
+<p>´´´Python {}</p>
 <p>[
 {
 &lsquo;header1&rsquo;: &lsquo;value&rsquo;,
@@ -138,18 +138,18 @@ result.append(row)</p>
 <p>´´´</p>
 <p>Let&rsquo;s see which changes we need to apply to the code when using this approach. We receive a correctly transposed CSV Table as a list of dicts right after import. So, we can directly filter on each line of this list.</p>
 <p>First our new _import_csv() function:</p>
-<p>´´´{Python}</p>
+<p>´´´Python {}</p>
 <p>def _import_csv(filepath=&quot;../startup_funding.csv&quot;):
 with open(filepath, &ldquo;rt&rdquo;) as csvfile:
 return [row for row in csv.DictReader(csvfile, delimiter=&quot;,&quot;, quotechar='&quot;')]
 ´´´</p>
 <p>We added a little list comprehension to transform the Reader object containing a dict to a list of dicts. Just as we needed it. If we test this in our notebook, the output is fine. However, suddenly our tests do not pass anymore. Now this becomes interesting!</p>
 <p>Our for loop from before need to be able to filter through multiple columns - as many as the user passed to our function - and add the results to the result list. If we implement this in analogy to the previous expressive function, we discover that both where and find_by assume the presence of both options for a successful match (AND). We can translate this to make sure the options dictionary is a subset of the row while iterating through each row. How might we do this?</p>
-<p>´´´´{Python}</p>
+<p>´´´{Python}</p>
 <p>[row for row in self.data if row | options == row]</p>
 <p>´´´</p>
 <p>As simple as the above one-liner! We can iterate through each row of our dataset and check if our options dict is an exact subset, i.e. all key-value-pairs in options match the corresponding key-value-pairs in our csv_data-row. This is the check we need for this:</p>
-<p>´´´´{Python}</p>
+<p>´´´Python {}</p>
 <h1 id="comparing-two-dicts-using-bitwise-or-aka-pipe">Comparing two dicts using bitwise-or (aka Pipe)</h1>
 <p>(row | options) == row</p>
 <h1 id="alternative-using-tuples">Alternative using Tuples</h1>
@@ -157,13 +157,14 @@ return [row for row in csv.DictReader(csvfile, delimiter=&quot;,&quot;, quotecha
 <p>´´´</p>
 <p>[ ] The &ldquo;|&rdquo; operator can be used on Dicts since Python 3.9: <a href="https://www.python.org/dev/peps/pep-0584/">https://www.python.org/dev/peps/pep-0584/</a>. It allows creating the union of two dicts on both keys and values. If the options dict contains values also contained in the row dict, then both will be identical. If the options dict contains values that are not in the row dict, the row dicts values will be overwritten temporarily for the sake of comparing it to the original row dict. Obviously those do not match and hence the check fails.</p>
 <p>Other potential logical Operators would be</p>
-<p>´´´´{Python}
+<p>´´´Python {}
 intersection = dict(dict1.items() &amp; dict2.items())
 union = dict(dict1.items() | dict2.items())
 difference = dict(dict1.items() ^ dict2.items())
 ´´´</p>
 <p>After some cleanup our code looks like this:</p>
-<p>{{&gt; gist f6912fd5617cd38be9843d1b35c6bd50 &lt;}}</p>
+<script type="application/javascript" src="https://gist.github.com/f6912fd5617cd38be9843d1b35c6bd50/.js"></script>
+
 <p>We moved the comprehension statement from our two functions into one staticmethod _filter which get&rsquo;s the data, filters it and returns a generator. We can render this generator as a list (where() function) or return the first item from it (next() in find_by() function).</p>
 <p>Pretty clean now?
 In the next post we are extending the use case and will add some more Quality. Let&rsquo;s focus some more on patterns to secure professional code and safety a lot more.</p>

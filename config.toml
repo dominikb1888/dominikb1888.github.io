@@ -14,7 +14,7 @@ pygmentscodefencesguesssyntax = true
 paginate=5 # articles per page
 
   mode = "auto"
-  subtitle = "Let's challenge the state of health and education"
+  subtitle = "Understanding the world from scratch."
 
 
 [[params.social]]
