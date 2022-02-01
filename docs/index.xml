@@ -8,7 +8,38 @@
     <language>en-us</language>
     <managingEditor>info@dominikboehler.de (Dominik Böhler)</managingEditor>
     <webMaster>info@dominikboehler.de (Dominik Böhler)</webMaster>
-    <copyright>Dominik Boehler</copyright><atom:link href="https://dominikboehler.de/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Dominik Boehler</copyright>
+    <lastBuildDate>Tue, 01 Feb 2022 08:15:53 +0200</lastBuildDate><atom:link href="https://dominikboehler.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Refactoring Exercise (2/3) - Making use of Pythons Built-in Powers</title>
+      <link>https://dominikboehler.de/2022/02/comment_2/</link>
+      <pubDate>Tue, 01 Feb 2022 08:15:53 +0200</pubDate>
+      <author>info@dominikboehler.de (Dominik Böhler)</author>
+      <guid>https://dominikboehler.de/2022/02/comment_2/</guid>
+      <description>The cleaning story continued - Built-Ins are coming! In the first post, we looked at cleaning our code on the block level. We identified two import blocks we moved to a separate function, several similar blocks of mappings we replaced with a for loop.
+In this post, we will look at the next level of granularity. We will check the code for further repetitions and see where code style can be improved to become less imperative.</description>
+    </item>
+    
+    <item>
+      <title>Refactoring Exercise (3/3) - Abstraction an Types are fun!</title>
+      <link>https://dominikboehler.de/2022/02/comment_3/</link>
+      <pubDate>Tue, 01 Feb 2022 08:15:53 +0200</pubDate>
+      <author>info@dominikboehler.de (Dominik Böhler)</author>
+      <guid>https://dominikboehler.de/2022/02/comment_3/</guid>
+      <description>From chaos to code - Embeding Type Checking, Exensibility, and Security In our previous posts we went through a horrible piece of code and cleaned it (DRY principle) and create a stronger OOP logic. In itself the code is good and clean. Still it has substantial flaws, if we look at it from the outside. What happens, if we would like to employ a different search strategy but a union search on all options?</description>
+    </item>
+    
+    <item>
+      <title>Refactoring Exercise (1/3) - Step-by-step improving python code</title>
+      <link>https://dominikboehler.de/2022/02/comment_1/</link>
+      <pubDate>Tue, 01 Feb 2022 08:14:53 +0200</pubDate>
+      <author>info@dominikboehler.de (Dominik Böhler)</author>
+      <guid>https://dominikboehler.de/2022/02/comment_1/</guid>
+      <description>Stage 1 - Understand the objectives and making it DRY Looking for a good exercise on python code refactoring that is suitable for beginners, I came across this repository: https://github.com/lamchau/refactoring-exercise. Thank you to Lam Chau for making this publicly available!
+So, let&amp;rsquo;s get started with reworking this very &amp;ldquo;elaborate&amp;rdquo; piece of software craftsmanship ;-)
+After cleaning the direct and obvious formal flaws from the code (Indenting according to PEP8 with 4 Spaces and an unused variable: https://www.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://dominikboehler.de/about/</link>
@@ -27,35 +58,6 @@ Feel free reach out to me on other platforms:
       <author>info@dominikboehler.de (Dominik Böhler)</author>
       <guid>https://dominikboehler.de/legal-notice/</guid>
       <description>Accountability for linksResponsibility for the content of external links (to web pages of third parties) lies solely with the operators of the linked pages. No violations were evident to us at the time of linking. Should any legal infringement become known to us, we will remove the respective link immediately.CopyrightOur web pages and their contents are subject to German copyright law. Unless expressly permitted by law, every form of utilizing, reproducing or processing works subject to copyright protection on our web pages requires the prior consent of the respective owner of the rights.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://dominikboehler.de/1/01/comment_1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>info@dominikboehler.de (Dominik Böhler)</author>
-      <guid>https://dominikboehler.de/1/01/comment_1/</guid>
-      <description>Stage 1 - Understand the objectives and making it DRY After cleaning the direct and obvious formal flaws from the code (Indenting according to PEP8 with 4 Spaces and an unused variable: https://www.python.org/dev/peps/pep-0008/), it is about understanding the business objectives of the code and understanding what is a repetition and what is potentially business logic, i.e. unclean, but still intended.
-Business Logic DRYing up on block level The code is Class with @staticmethod decorators, this means that we do not need to create an object to access the class methods.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://dominikboehler.de/1/01/comment_2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>info@dominikboehler.de (Dominik Böhler)</author>
-      <guid>https://dominikboehler.de/1/01/comment_2/</guid>
-      <description>The cleaning story continued - Built-Ins are coming! In the first post, we looked at cleaning our code on the block level. We identified two import blocks we moved to a separate function, several similar blocks of mappings we replaced with a for loop.
-In this post, we will look at the next level of granularity. We will check the code for further repetitions and see where code style can be improved to become less imperative.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://dominikboehler.de/1/01/comment_3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>info@dominikboehler.de (Dominik Böhler)</author>
-      <guid>https://dominikboehler.de/1/01/comment_3/</guid>
-      <description>From chaos to code - Embeding Type Checking, Exensibility, and Security In our previous posts we went through a horrible piece of code and cleaned it (DRY principle) and create a stronger OOP logic. In itself the code is good and clean. Still it has substantial flaws, if we look at it from the outside. What happens, if we would like to employ a different search strategy but a union search on all options?</description>
     </item>
     
   </channel>
