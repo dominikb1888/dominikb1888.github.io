@@ -33,4 +33,4 @@ Entrepreneurial Learning equips technical innovators with hands-on skills in the
 
 ## Responsible for Content:
 
-[Legal Notice](/legal-notice.md)
+[Legal Notice](/legal-notice)
