@@ -132,6 +132,8 @@ def _import_csv(filepath="../startup_funding.csv"):
 
 We added a little list comprehension to transform the Reader object containing a dict to a list of dicts. Just as we needed it. If we test this in our notebook, the output is fine. However, suddenly our tests do not pass anymore. Now this becomes interesting!
 
+## A Union for the Options
+
 Our for loop from before need to be able to filter through multiple columns - as many as the user passed to our function - and add the results to the result list. If we implement this in analogy to the previous expressive function, we discover that both where and find_by assume the presence of both options for a successful match (AND). We can translate this to make sure the options dictionary is a subset of the row while iterating through each row. How might we do this?
 
 ```python
