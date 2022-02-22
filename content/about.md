@@ -33,4 +33,8 @@ Entrepreneurial Learning equips technical innovators with hands-on skills in the
 
 ## Responsible for Content:
 
+Dominik Böhler
+Sepp-Giggenbach-Str. 31
+84453 Mühldorf am Inn
+
 [Legal Notice](/legal-notice)
