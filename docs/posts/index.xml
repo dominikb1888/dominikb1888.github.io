@@ -12,29 +12,29 @@
     <lastBuildDate>Tue, 01 Feb 2022 08:15:53 +0200</lastBuildDate><atom:link href="https://dominikboehler.de/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Refactoring Exercise (2/3) - Making use of Pythons Built-in Powers</title>
-      <link>https://dominikboehler.de/2022/02/comment_2/</link>
+      <link>https://dominikboehler.de/2022/02/ref_post_2/</link>
       <pubDate>Tue, 01 Feb 2022 08:15:53 +0200</pubDate>
       <author>info@dominikboehler.de (Dominik Böhler)</author>
-      <guid>https://dominikboehler.de/2022/02/comment_2/</guid>
+      <guid>https://dominikboehler.de/2022/02/ref_post_2/</guid>
       <description>The cleaning story continued - Built-Ins are coming! In the first post, we looked at cleaning our code on the block level. We identified two import blocks we moved to a separate function, several similar blocks of mappings we replaced with a for loop.
 In this post, we will look at the next level of granularity. We will check the code for further repetitions and see where code style can be improved to become less imperative.</description>
     </item>
     
     <item>
       <title>Refactoring Exercise (3/3) - Abstraction an Types are fun!</title>
-      <link>https://dominikboehler.de/2022/02/comment_3/</link>
+      <link>https://dominikboehler.de/2022/02/ref_post_3/</link>
       <pubDate>Tue, 01 Feb 2022 08:15:53 +0200</pubDate>
       <author>info@dominikboehler.de (Dominik Böhler)</author>
-      <guid>https://dominikboehler.de/2022/02/comment_3/</guid>
+      <guid>https://dominikboehler.de/2022/02/ref_post_3/</guid>
       <description>From chaos to code - Embeding Type Checking, Exensibility, and Security In our previous posts we went through a horrible piece of code and cleaned it (DRY principle) and create a stronger OOP logic. In itself the code is good and clean. Still it has substantial flaws, if we look at it from the outside. What happens, if we would like to employ a different search strategy but a union search on all options?</description>
     </item>
     
     <item>
       <title>Refactoring Exercise (1/3) - Step-by-step improving python code</title>
-      <link>https://dominikboehler.de/2022/02/comment_1/</link>
+      <link>https://dominikboehler.de/2022/02/ref_post_1/</link>
       <pubDate>Tue, 01 Feb 2022 08:14:53 +0200</pubDate>
       <author>info@dominikboehler.de (Dominik Böhler)</author>
-      <guid>https://dominikboehler.de/2022/02/comment_1/</guid>
+      <guid>https://dominikboehler.de/2022/02/ref_post_1/</guid>
       <description>Stage 1 - Understand the objectives and making it DRY Looking for a good exercise on python code refactoring that is suitable for beginners, I came across this repository: https://github.com/lamchau/refactoring-exercise. Thank you to Lam Chau for making this publicly available!
 So, let&amp;rsquo;s get started with reworking this very &amp;ldquo;elaborate&amp;rdquo; piece of software craftsmanship ;-)
 After cleaning the direct and obvious formal flaws from the code (Indenting according to PEP8 with 4 Spaces and an unused variable: https://www.</description>
