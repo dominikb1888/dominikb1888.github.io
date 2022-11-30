@@ -8,9 +8,9 @@ enableGitInfo = true
 gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
 
 # Code Highlighting
-pygmentstyle = "monokai"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+pygmentStyle = "monokai"
+# pygmentscodefences = true
+# pygmentscodefencesguesssyntax = true
 paginate=5 # articles per page
 
   mode = "auto"

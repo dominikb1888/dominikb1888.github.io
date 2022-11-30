@@ -65,15 +65,15 @@ If we analyze the output we can see that we receive a list of list with no heade
 
 How does the transformation of our list continue? Let's look the where function first.
 
-The first step in this transformation is a filter operation, and a weird one two. We need to remap the position of our original header (we placed this information in a dict to clean up before) to the position in our list. I added comments to each line of code in plain English.  
+The first step in this transformation is a filter operation, and a weird one two. We need to remap the position of our original header (we placed this information in a dict to clean up before) to the position in our list. I added comments to each line of code in plain English.
 
 
 ```python {}
-# We need to keep an order of the columns to make sure we can remap that to the content our csv_data list of lists. 
+# We need to keep an order of the columns to make sure we can remap that to the content our csv_data list of lists.
 columns_dict = {1: "company_name", 4: "city", 5: "state", 9: "round"}
 # To filter we need to first check for all options in above dict. Apparently our users aren't allowed to search for something else. This is business logic. We will discuss this later!
 for key, column in columns_dict.items():
-    # We will only take columns from the options dict our user passes that match our columns_dict above. 
+    # We will only take columns from the options dict our user passes that match our columns_dict above.
     if column in options:
         # Create a temp list to hold our filtered results
         result = []
@@ -82,8 +82,8 @@ for key, column in columns_dict.items():
             if row[key] == options[column]:
                 # if yes, we append this to our result list, i.e. a valid search result!
                 result.append(row)
-                
-        # We overwrite our csv_data Variable, with our search result, mmmmmm                
+
+        # We overwrite our csv_data Variable, with our search result, mmmmmm
         csv_data = result
 
 ```
@@ -105,7 +105,7 @@ Thanks to everyone involved in the python standard library. The CSV Module conta
 ```{Python}
 
 [
-    { 
+    {
          'header1': 'value',
          'header2': 'value',
     },
@@ -113,7 +113,7 @@ Thanks to everyone involved in the python standard library. The CSV Module conta
          'header1': 'value',
          'header2': 'value',
     },
-    
+
    # <...>
 ]
 
@@ -156,7 +156,7 @@ options.items() <= row.items()
 [ ] The "|" operator can be used on Dicts since Python 3.9: https://www.python.org/dev/peps/pep-0584/. It allows creating the union of two dicts on both keys and values. If the options dict contains values also contained in the row dict, then both will be identical. If the options dict contains values that are not in the row dict, the row dicts values will be overwritten temporarily for the sake of comparing it to the original row dict. Obviously those do not match and hence the check fails.
 
 
-Other potential logical Operators would be 
+Other potential logical Operators would be
 
 ```python {}
 
@@ -172,5 +172,5 @@ After some cleanup our code looks like this:
 
 We moved the comprehension statement from our two functions into one staticmethod _filter which get's the data, filters it and returns a generator. We can render this generator as a list (where() function) or return the first item from it (next() in find_by() function).
 
-Pretty clean now? 
-In the next post we are extending the use case and will add some more Quality. Let's focus some more on patterns to secure professional code and safety a lot more. 
+Pretty clean now?
+In the next post we are extending the use case and will add some more Quality. Let's focus some more on patterns to secure professional code and safety a lot more.
