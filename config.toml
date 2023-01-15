@@ -7,10 +7,6 @@ copyright = "Dominik Boehler"
 enableGitInfo = true
 gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
 
-# Code Highlighting
-pygmentStyle = "monokai"
-# pygmentscodefences = true
-# pygmentscodefencesguesssyntax = true
 paginate=5 # articles per page
 
   mode = "auto"
@@ -164,10 +160,18 @@ name = "About"
 url = "/about"
 weight = 3
 # Markup related configuration in Hugo
-[markup]
-  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
-  [markup.highlight]
-    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+
+# Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+[markup.highlight]
+  # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    style = "github"
+    tabWidth = 4
     noClasses = false
 
 [outputs]
