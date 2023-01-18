@@ -32,7 +32,6 @@ paginate=5 # articles per page
   version = "0.2.X"
   description = "Digital Business Models, Data Strategy"
   images = ["/logo.png"]
-  customcss = ["static/custom.css"]
 
 [[params.social]]
   name = "Twitter"
