@@ -12,24 +12,6 @@ paginate=5 # articles per page
   mode = "auto"
   subtitle = "Understanding the world from scratch."
 
-custom_css = ["static/custom.css"]
-
-
-[[params.social]]
-  name = "Twitter"
-  icon =  "twitter"
-  url = "https://twitter.com/dominikb1888"
-
-[[params.social]]
-  name = "LinkedIN"
-  icon = "linkedin"
-  url = "https://linkedin.com/in/dominikb1888"
-
-[[params.social]]
-  name = "GitHub"
-  icon = "github"
-  url = "https://github.com/dominikb1888"
-
 # Author config
 [author]
   name = "Dominik Böhler"
@@ -50,6 +32,22 @@ custom_css = ["static/custom.css"]
   version = "0.2.X"
   description = "Digital Business Models, Data Strategy"
   images = ["/logo.png"]
+  customcss = ["static/custom.css"]
+
+[[params.social]]
+  name = "Twitter"
+  icon =  "twitter"
+  url = "https://twitter.com/dominikb1888"
+
+[[params.social]]
+  name = "LinkedIN"
+  icon = "linkedin"
+  url = "https://linkedin.com/in/dominikb1888"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "github"
+  url = "https://github.com/dominikb1888"
 
 [params.app]
     # whether to omit favicon resource links
