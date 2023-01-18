@@ -12,6 +12,8 @@ paginate=5 # articles per page
   mode = "auto"
   subtitle = "Understanding the world from scratch."
 
+custom_css = ["static/custom.css"]
+
 
 [[params.social]]
   name = "Twitter"
@@ -194,12 +196,7 @@ weight = 3
   # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
   absoluteURL = false
 
-  [params.search.algolia]
-    index = "index.json"
-    appID = "8LWU3NIHJC"
-    searchKey = "57c2a24d5895812c8ed3b1b83218e7d3"
-
-  # LoveIt NEW | 0.2.0 Analytics config
+   # LoveIt NEW | 0.2.0 Analytics config
   [params.analytics]
     enable = false
     # Google Analytics
