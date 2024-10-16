@@ -102,7 +102,7 @@ Let's reflect on this code though. It looks a lot cleaner now, but a lot more as
 
 Thanks to everyone involved in the python standard library. The CSV Module contains a way to not only read a CSV into a list lists, but to transpose this into a list of dicts with column headers as keys, and data values as dict values. Just like this:
 
-```{Python}
+```python {}
 
 [
     {
@@ -116,7 +116,6 @@ Thanks to everyone involved in the python standard library. The CSV Module conta
 
    # <...>
 ]
-
 ```
 
 Let's see which changes we need to apply to the code when using this approach. We receive a correctly transposed CSV Table as a list of dicts right after import. So, we can directly filter on each line of this list.

@@ -7,7 +7,7 @@ copyright = "Dominik Boehler"
 enableGitInfo = true
 gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
 
-paginate=5 # articles per page
+pagination.pagerSize = 5
 
   mode = "auto"
   subtitle = "Understanding the world from scratch."
