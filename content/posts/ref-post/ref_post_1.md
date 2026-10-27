@@ -4,7 +4,7 @@ date: 2022-02-01T08:14:53+02:00
 draft: false
 ---
 
-# Stage 1 - Understand the objectives and making it DRY 
+# Stage 1 - Understand the objectives and making it DRY
 
 Looking for a good exercise on python code refactoring that is suitable for beginners, I came across this repository: https://github.com/lamchau/refactoring-exercise. Thank you to Lam Chau for making this publicly available!
 
@@ -14,10 +14,10 @@ After cleaning the direct and obvious formal flaws from the code (Indenting acco
 
 ## Business Logic
 
-Just by looking at the code it is hard to understand what it does. We can guess it has something to do with Venture Capital and Financing Rounds. The two main functions are called "where" and "find_by". So, we can assume it is some kind of database that is searchable. But the what, why and how is really obfuscated in many repetitive lines of code. 
+Just by looking at the code it is hard to understand what it does. We can guess it has something to do with Venture Capital and Financing Rounds. The two main functions are called "where" and "find_by". So, we can assume it is some kind of database that is searchable. But the what, why and how is really obfuscated in many repetitive lines of code.
 
-## DRYing up on block level 
-The code is Class with @staticmethod decorators, this means that we do not need to create an object to access the class methods. 
+## DRYing up on block level
+The code is Class with @staticmethod decorators, this means that we do not need to create an object to access the class methods.
 
 The first things that spring even to a relatively untrained eye are repeated code blocks:
 
@@ -27,7 +27,7 @@ The Import of the CSV is doubled in both the where and find_by functions. This m
 
 ### Multiple mappings to dictionaries
 
-In both functions we find many mappings of code blocks that can cleaned by extracting them into a separate function and the string literals into lists. Here the first real question arises. What is this code actually trying to achieve? 
+In both functions we find many mappings of code blocks that can cleaned by extracting them into a separate function and the string literals into lists. Here the first real question arises. What is this code actually trying to achieve?
 
 We are seeing three steps:
 1. Data import
@@ -36,7 +36,7 @@ We are seeing three steps:
 
 
 Here's the intermediate codebase:
-{{< gist 5abfff10e1776d7bf2efe1c4ba1fca15 >}}
+
 
 ## Analysis
 

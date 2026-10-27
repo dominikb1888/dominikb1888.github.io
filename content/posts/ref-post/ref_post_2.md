@@ -1,7 +1,7 @@
 ---
 title: "Refactoring Exercise (2/3) - Making use of Pythons Built-in Powers"
 date: 2022-02-01T08:15:53+02:00
-draft: false
+draft: true
 ---
 
 
@@ -92,8 +92,6 @@ Ui, ui. So basically our brief search implementation needs to keep a strict regi
 
 I wonder what happens, if we remove the check for only these 4 columns and allow for all. If our test cases, which are describing the business logic do not test for any edge case here, we could just throw this line out. So, let's do this!
 
-{{< gist dominikb1888 511582066f7e2b0c7f7ef0362f633222 >}}
-
 The code passes all tests without any issues. This means either the code was implementing something the client never wanted or the product manager didn't specify a proper test suite. For us this does not matter for the moment. Our concern is making all tests pass.
 
 Let's reflect on this code though. It looks a lot cleaner now, but a lot more as also become useless. Our Checking block is still necessary. However, the mapping block after needs to be questioned. If there is no need to check the options for certain column headers, which reason does the separation of headers and code have. Why would we need to map that code into a list of dicts in our final step in the function? Not at all, correct. We could start using a list of dicts right from the start and filter each line.
@@ -167,7 +165,6 @@ difference = dict(dict1.items() ^ dict2.items())
 
 After some cleanup our code looks like this:
 
-{{< gist dominikb1888 f6912fd5617cd38be9843d1b35c6bd50 >}}
 
 We moved the comprehension statement from our two functions into one staticmethod _filter which get's the data, filters it and returns a generator. We can render this generator as a list (where() function) or return the first item from it (next() in find_by() function).
 

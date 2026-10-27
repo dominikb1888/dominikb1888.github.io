@@ -1,7 +1,7 @@
 ---
 title: "Refactoring Exercise (3/3) - Abstraction an Types are fun!"
 date: 2022-02-01T08:15:53+02:00
-draft: false
+draft: true
 ---
 
 
@@ -16,4 +16,3 @@ One thing changes now. For each change we will also need to change the test suit
 Currently our functions do not employ any type of type checking. Python offers in the Standard library since 3.5. So we may as well add the typing module to our file and annotate our functions. This is good practice as it enhances comprehensibility of our code and increases unintended side effects. Let's look at the new code and the tests:
 
 
-{{< gist dominikb1888 4db7ccdaa01c8aea0954c29a07dcadcd >}}
