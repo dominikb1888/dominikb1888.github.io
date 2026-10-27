@@ -30,7 +30,7 @@ pagination.pagerSize = 5
 [params]
   # LoveIt theme version
   version = "0.2.X"
-  description = "Digital Business Models, Data Strategy"
+  description = "Cognitive Organizing"
   images = ["/logo.png"]
 
 [[params.social]]
