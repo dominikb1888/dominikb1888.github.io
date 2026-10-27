@@ -1,7 +1,7 @@
 ---
 title: "Refactoring Exercise (1/3) - Step-by-step improving python code"
 date: 2022-02-01T08:14:53+02:00
-draft: false
+draft: true
 ---
 
 # Stage 1 - Understand the objectives and making it DRY
