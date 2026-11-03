@@ -9,14 +9,14 @@ Bending the world to your will is both exciting and exhausting. However, the rew
 A lot of the inspiration for this blog has been sparked by the Toaster project of Tom Thwaites. Tom built a toaster from scratch. He went to dig for raw iron ore as well as buying crude oil. He went all the way back to where our value chains start. With more digital and less and less reliable value chains, I thought taking the journey from there is something worth doing. My first endeavours will be fully digital though and revolve a lot around programming and digital content. Later we will touch physical things a lot more.
 
 
-## The world around us - mere surface
+## The World around us - mere Surface
 
 What we see around us is a surface. If you start peeling the white coating from your Ikea furniture, you will discover that it is press board. The way from a tree to a press board is long. It is clear to everyone that it is and that a lot of intermediaries are involved in this process. The technical term would be the value chain. So the different stages of pre-production in between the raw product and the product on your shelves (or in your browser window ;-)). But where do we start? Is the origin of a piece of press board a tree or is it the farmer planting that tree in the first place? It is an important question, if we would like to dig deeper into the digital value chains. The scaffolding need to solve even the simplest of tasks is faceted and complex.
 
 So, where do trees come from? In the wild obviously from other trees. Your piece of press board will with all likelihood have originated from a farm. So, just the wood is not our true origin. It would be the seeds and maybe a tool or a machine to seed them. How where the seeds produced and shipped? The first message is delivered. Defining the origin is not simple.
 
 
-## The origin and end of the digital world
+## The Origin and End of the Digital World
 
 When in the process of computation, i.e. the boot process of an operating system do we not only speak about electrical current, but bits and bytes? This is when the real world (yes, electricity is real... it can hurt you) is virtualized and augmented. It is done by forming clever layers of modular systems on top of electrical switches etched into silicon chips. The core of this is the layered and modular nature. How many layers of software are you actually using when entering something into your browser? Let's dig into this!
 
@@ -24,7 +24,7 @@ So, now we could make our lives easy and use what there's already. Most Operatin
 
 In the very recent past, we have seen many successful attempts where LLMs produce own ways to communicate with each other. They used, amongst other techniques, cache load timing to create binary state or the acoustics of shared storage. In comparison, human-to-human communication using HTTP and HTML feels like sending a fax with a hand-filled form to a government agency.
 
-## The cognitive organization
+## The Cognitive Organization
 
 Software Development has always been closely linked to how we automate. What to automate was always a question of how we organize. In conclusion, we need to fundamentally rethink and rework modern organization. Many organizations struggle in adopting AI. Mainly because, hierarchical organization are not made to create abundant flows information. Quite the opposite. They were created to minimize and channel the flow of information.
 
@@ -34,7 +34,7 @@ This will mean that both strategy and its execution (which organizational form i
 
 AI promises an age of abundance. Community-driven Open Source project have already proven their power when it comes to distributed organizing of complex endeavours. The last frontier for most people was about leaving the safe space of the salary large corporations provided. Let's take that out of the equation and re-think organizations from scratch. Cognition precedes information as in states of data that are shared. Without cognition there is no signs and signals we receive and hence no data we can put into context to retrieve information.
 
-Let's delve into the cognitive foundations of organizations.
+Let's start the cognitive revolution of organizing together.
 
 
 
