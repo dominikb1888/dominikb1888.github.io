@@ -1,6 +1,6 @@
 baseURL = "https://dominikboehler.de"
 locale = "en-us"
-title = "Beneath the Veneer"
+title = "BENEATH THE VENEER"
 theme  = "archie"
 publishDir = "docs"
 copyright = "Dominik Boehler"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Posts on Beneath the Veneer</title>
-		<link>https://dominikboehler.de/posts/</link>
-		<description>Recent content in Posts on Beneath the Veneer</description>
+		<title>Posts on BENEATH THE VENEER</title>
+		<link>http://localhost:1313/posts/</link>
+		<description>Recent content in Posts on BENEATH THE VENEER</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -12,56 +12,56 @@
 			<copyright>Dominik Boehler</copyright>
 		
 		
-			<lastBuildDate>Tue, 03 Nov 2026 08:28:30 +0100</lastBuildDate>
+			<lastBuildDate>Wed, 04 Nov 2026 08:51:27 +0100</lastBuildDate>
 		
-			<atom:link href="https://dominikboehler.de/posts/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>The Cognitive Organisation: Coase and the Cost of AI</title>
-				<link>https://dominikboehler.de/2022/02/cognitive_organization/</link>
+				<link>http://localhost:1313/2022/02/cognitive_organization/</link>
 				<pubDate>Tue, 22 Feb 2022 10:00:00 +0100</pubDate>
-				<guid>https://dominikboehler.de/2022/02/cognitive_organization/</guid>
+				<guid>http://localhost:1313/2022/02/cognitive_organization/</guid>
 				<description>&lt;p&gt;In 1937, a young British economist named Ronald Coase asked a disarmingly simple question: if free markets are the most efficient mechanism for allocating resources, why do business firms exist at all?&lt;/p&gt;&#xA;&lt;p&gt;His answer founded the economics of organisation. Markets are brilliant, Coase noted, but using them is expensive. Discovering prices, negotiating terms, drawing up bespoke contracts, and inspecting deliverables all incur &amp;ldquo;transaction costs.&amp;rdquo; Where those costs are high—particularly for complex, uncertain, or highly customised work—it is cheaper to bring people under one roof and coordinate them through managerial command.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>From Scratch: The Case for Peeling the Veneer</title>
-				<link>https://dominikboehler.de/2022/02/from-scratch/</link>
+				<link>http://localhost:1313/2022/02/from-scratch/</link>
 				<pubDate>Sun, 20 Feb 2022 19:54:33 +0100</pubDate>
-				<guid>https://dominikboehler.de/2022/02/from-scratch/</guid>
+				<guid>http://localhost:1313/2022/02/from-scratch/</guid>
 				<description>&lt;p&gt;In 2009, a British designer named Thomas Thwaites set out to build a commercial toaster from scratch. Not to assemble one from a kit, but to smelt iron ore in a chimney, refine crude oil into plastic resin, and draw copper wire from scrap metal. Nine months and over a thousand pounds later, he produced a grotesque, melted contraption that functioned for five seconds before destroying its own element.&lt;/p&gt;&#xA;&lt;p&gt;Thwaites was not trying to become a competitive appliance manufacturer. He was demonstrating a fundamental condition of modernity: human beings now live surrounded by artefacts whose origins they can neither comprehend nor replicate.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>The End of Theory is a Dangerous Trap</title>
-				<link>https://dominikboehler.de/2021/12/theory-and-digital/</link>
+				<link>http://localhost:1313/2021/12/theory-and-digital/</link>
 				<pubDate>Sun, 12 Dec 2021 22:21:38 +0100</pubDate>
-				<guid>https://dominikboehler.de/2021/12/theory-and-digital/</guid>
+				<guid>http://localhost:1313/2021/12/theory-and-digital/</guid>
 				<description>&lt;p&gt;In 2008, Chris Anderson, then the editor-in-chief of &lt;em&gt;Wired&lt;/em&gt;, published a provocative essay entitled &amp;ldquo;The End of Theory: The Data Deluge Makes the Scientific Method Obsolete.&amp;rdquo; His thesis was seduced by raw compute: with petabytes of storage and statistical algorithms, science no longer needed models, hypotheses, or causal theories. Correlation was enough. Feed numbers into the machine, let the algorithms discover the patterns, and dispense with the messy human business of asking &lt;em&gt;why&lt;/em&gt;.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Bismarck’s Ghost: The Invention of the Patient</title>
-				<link>https://dominikboehler.de/2021/07/state-of-health/</link>
+				<link>http://localhost:1313/2021/07/state-of-health/</link>
 				<pubDate>Sat, 10 Jul 2021 23:57:43 +0200</pubDate>
-				<guid>https://dominikboehler.de/2021/07/state-of-health/</guid>
+				<guid>http://localhost:1313/2021/07/state-of-health/</guid>
 				<description>&lt;p&gt;Language reveals theology. In modern political discourse, we use &amp;ldquo;health&amp;rdquo; and &amp;ldquo;medicine&amp;rdquo; interchangeably, as if a physician’s consulting room and human vitality were identical concepts. They are not.&lt;/p&gt;&#xA;&lt;p&gt;Health is a continuous biological state—a dynamic equilibrium between an organism, its genetics, and its environment. Medicine, by contrast, is a professional guild dedicated to crisis intervention: the acute diagnosis and repair of broken biological machinery.&lt;/p&gt;&#xA;&lt;p&gt;Confusing the two was harmless when our diagnostic tools were primitive and our therapies limited to setting fractures and prescribing antibiotics. In the era of continuous biometrics, genomic profiling, and ambient telemetry, the confusion has become financially and philosophically unsustainable.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>The Friction of Magic</title>
-				<link>https://dominikboehler.de/2021/07/magic/</link>
+				<link>http://localhost:1313/2021/07/magic/</link>
 				<pubDate>Wed, 07 Jul 2021 23:12:55 +0200</pubDate>
-				<guid>https://dominikboehler.de/2021/07/magic/</guid>
+				<guid>http://localhost:1313/2021/07/magic/</guid>
 				<description>&lt;p&gt;In a documentary recording the agonisingly slow creation of their fourth album, Eirik Glambek Bøe of Kings of Convenience articulates a paradox familiar to anyone who has ever tried to manufacture inspiration on a deadline:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Strings touching nails sometimes make ugly sounds. You can&amp;rsquo;t consciously create magic. It has to happen at the moment when you let go. It&amp;rsquo;s a bit like falling asleep—you can&amp;rsquo;t force yourself to fall asleep.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
 			</item>
 			<item>
 				<title>Stigmergy and the Plaza: Why You Cannot Mandate Digital Health</title>
-				<link>https://dominikboehler.de/2021/05/a-third-way/</link>
+				<link>http://localhost:1313/2021/05/a-third-way/</link>
 				<pubDate>Wed, 05 May 2021 08:14:53 +0200</pubDate>
-				<guid>https://dominikboehler.de/2021/05/a-third-way/</guid>
+				<guid>http://localhost:1313/2021/05/a-third-way/</guid>
 				<description>&lt;p&gt;There is an old architectural parable concerning the construction of a university campus. When four modern towers were completed around a central square, the university rector was astonished to find the courtyard left as an unpaved expanse of lawn. When he demanded to know why the pathways had not been laid, the architect replied:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;The work is finished for now. In twelve months, let us look down from the top floor. The students will have walked across the grass, carving trample paths between the buildings. Where they have walked, we will lay our tarmac.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
 			</item>
 			<item>
 				<title>Why Healthcare Reimbursement Kills Software</title>
-				<link>https://dominikboehler.de/2021/03/theses-for-digital-health/</link>
+				<link>http://localhost:1313/2021/03/theses-for-digital-health/</link>
 				<pubDate>Tue, 02 Mar 2021 10:34:51 +0100</pubDate>
-				<guid>https://dominikboehler.de/2021/03/theses-for-digital-health/</guid>
+				<guid>http://localhost:1313/2021/03/theses-for-digital-health/</guid>
 				<description>&lt;p&gt;Modern medicine is obsessed with the existential; digital software is concerned with the relational. The collision of these two worldviews explains why digital health has produced so many press releases and so little actual transformation.&lt;/p&gt;&#xA;&lt;p&gt;In healthcare regulatory parlance, an intervention is deemed relevant only if it demonstrates an existential impact: clinical trial evidence showing a statistically significant mitigation of a specific disease marker or mortality rate. This standard was forged in the era of synthetic molecules and titanium hip implants, where a device or drug acts directly upon the human organism.&lt;/p&gt;</description>
 			</item>
 	</channel>
