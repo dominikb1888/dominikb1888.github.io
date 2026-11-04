@@ -4,9 +4,9 @@ date: 2021-03-02T10:59:29+01:00
 draft: false
 ---
 
-<h2>Legal Disclaimer</h2cd d>
+<h2>Legal Disclaimer</h2>
   Information in accordance with Section 5 TMG
-  <br><br>Sepp-Giggenbach-Str. 31<br>84453 Mühldorf<br>
+  <br><br>Theresia-Gerhardinger-Str. 34<br>84453 Mühldorf<br>
   <h2>Contact Information</h2>
   E-Mail: <a href="mailto:dominik.boehler@gmx.net">info@dominikboehler.de</a><br>Internet
   address: <a href="dominikboehler.de" target="_blank">dominikboehler.de</a><br><br>
@@ -56,10 +56,10 @@ draft: false
   <p>The party responsible for this website (the "controller") for purposes of data protection law is:</p>
   <p><span style="color: #ff0000;">Dominik Böhler</span><br><span style="color: #ff0000;">Sepp-Giggenbach-Str. 31
       1</span><br><span style="color: #ff0000;">85433 Mühldorf</span><br><span style="color: #ff0000;">Germany</span></p>
-  <p>< style="color: #ff0000;">Email: info@dominikboehler.de</p>
+  <p><span style="color: #ff0000;">Email: info@dominikboehler.de</span></p>
   <p>The controller's data protection officer is:</p>
   <p><span style="color: #ff0000;">Dominik Böhler</span></p>
- 
+
   <h3>II. The rights of users and data subjects</h3>
   <p>With regard to the data processing to be described in more detail below, users and data subjects have the right</p>
   <ul type="disc">
@@ -833,7 +833,7 @@ draft: false
 
   <h2>Sources</h2>
   <p>Impressum: <a href="http://www.translate-24h.de" target="_blank">Deutsch-Englisch Übersetzungen</a></p>
- 
+
  <p>Datenschutzerklärung: <a href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html" target="_blank"
       rel="noopener">Model Data Protection Statement</a> from <a href="https://www.ratgeberrecht.eu/" target="_blank"
       rel="noopener">Anwaltskanzlei Weiß &amp; Partner</a></p>

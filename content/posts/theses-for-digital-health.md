@@ -1,41 +1,38 @@
+---
+title: "Why Healthcare Reimbursement Kills Software"
+date: 2021-03-02T10:34:51+01:00
+draft: false
+---
 
-Digital Services are neither essential nor existential. Medical Services are essential and existential. In a digital world both digital and medical services blend. This creates issues in our perception of product development, reimbursement and HCP incentives.
+Modern medicine is obsessed with the existential; digital software is concerned with the relational. The collision of these two worldviews explains why digital health has produced so many press releases and so little actual transformation.
 
-## Essential and Existential
+In healthcare regulatory parlance, an intervention is deemed relevant only if it demonstrates an existential impact: clinical trial evidence showing a statistically significant mitigation of a specific disease marker or mortality rate. This standard was forged in the era of synthetic molecules and titanium hip implants, where a device or drug acts directly upon the human organism.
 
-Something is essential, if it is "constituting or being part of the nature or essence of something".
-
-Something is existential, if it is "relating to or affirming existence".
-
-Digital Services in Healthcare are neither essential nor existential, because they do not essentially belong to the art and craft of doing medicine. They can be of great value, but we have been doing without for centuries. They might be deemed essential, if we focus on health economic principles and the accessibility and efficiency of healthcare systems.
-
-However, the current focus in regulatory approval and reimbursement centers around the notion of the existential. A device is medically relevant, if it can - based on evidence - contribute to mitigating symptoms or root causes of an indication. It does not so much focus on how this device can be accesses and contributes to higher level efficiency of the healthcare system.
-
-The current health economic principle is focussing on opportunity cost not system cost. The external effects of non-treatment and prevention are not factored into the direct evaluation of efficacy of medical devices. This hits digital solutions particularly hard.
-
-A good digital solution is focused creating value by reconfiguring value chains and reaping the benefits of data analytics from distributed networks of actors. Google improved search by analyzing the topology of the web (Which site is important based on existing links?) and combining this with user behaviour (Which site is actually clicked on?). The current revolution of the digital would not be thinkable, if the YAHOO approach of cataloging would have prevailed.
-
-The take-away: no system based on exclusive or partially overlapping categories is capable of matching the complexity of the world.
-
-* In fact, following this idea, we should be mining diseases from data and not from HCP categorizations. For this we would need data. Let's revisit this thought in a decade.
-
-From this example, we can learn a few things about how digital and healthcare currently do not fit together and what we might need to focus on to fix this:
+Software does not work that way. A medical device is an isolated physical object; a digital product is a node in an evolving social network.
 
 
-1. Focusing on evidence in product development only does not factor in the inherently social nature of digital products. Every digital product is a social network. If my product is not based on the automated analysis of data from distributed users, it could well have lived before the advent of the web. It is software, but not a good digital product.
+## The Yahoo error of clinical classification
 
-2. Based on this idea, it is clear that a good digital health solution needs to combine both features with clear medical evidence and features without. Currently, providers of digital solutions are barely reimbursed for the features directly contributing to evidence. Adding more features would need healthcare systems to focus more on outcomes, less on costs. The power of data will allow us to not treat every treatment the same. Without value-based healthcare, there are not enough incentives for solution providers to create the needed effects to improve the efficiency on care paths.
+When healthcare systems evaluate digital therapeutics, they commit what might be called the "Yahoo error" of 1995.
 
-3. On the flipside, this needs to create the same incentives on the side of the HCPs. While it might be an easy solution to demand collaboration in distributed networks, the distribution of contributors and readers in social network is not Gaussian. The old formula was 90% lurkers and 10% writers. Why should medical professionals deviate much from this statistic? We might obvioulsy force them to contribute. However, given the shortage of qualified staff in many health systems, mechanisms that build on trust and incentives seem better suited. The question is: Who should trust and who should pay. Reconfiguring the way Insurers, Producers and Patients contribute to this reimbursement needs a thought.
+In the early days of the web, Yahoo attempted to organise the internet by manually cataloguing websites into hierarchical taxonomies. It failed because the complexity of the web quickly outstripped any static category system. Google triumphed not by categorising sites better, but by analyzing the topology of relationships—who links to whom, and where users actually navigate.
+
+Traditional medicine remains trapped in the Yahoo paradigm. It categorises human suffering into rigid ICD codes, assigns each code an approved clinical pathway, and demands that software slot into these pre-existing boxes like an interactive brochure.
+
+Yet the primary power of digital technology in healthcare is not to deliver clinical content down a fixed pipeline. It is to dynamically reconfigure the relationships between patients, clinicians, and health data.
 
 
-## Digital Product Development in Healthcare
+## Three systemic contradictions
 
--> Product > Evidence: A problem for regulatory
+By treating software as if it were a chemical compound, modern reimbursement regimes systematically strangle digital products:
 
-## Reimbursing Luxury?
+1. **Reimbursing the feature, ignoring the network.** Regulators are willing to pay for the single algorithm that calculates an insulin dose, but refuse to compensate the communicative infrastructure that ensures the patient actually uses it. In software, isolated utility is worthless without user engagement; in regulatory dogma, user engagement is viewed as superfluous luxury.
+2. **The tyranny of the randomized controlled trial.** An RCT evaluates a static intervention over years. A good software product evolves weekly based on telemetry and user behavioural patterns. Forcing a digital platform through a drug-style clinical trial freezes its codebase in amber, preventing the rapid iteration upon which modern software efficacy depends.
+3. **The misaligned incentives of clinical labour.** Healthcare policy assumes that if you build a digital network, doctors will eagerly populate it. But human participation in digital networks is fundamentally non-linear: in almost every online community, 90% of users consume, 9% curate, and only 1% create. Expecting already exhausted physicians to become active content contributors without direct financial and operational upside is a bureaucratic fantasy.
 
-## Designing Systems with Trust and Incentives
 
-## Implications for systems
+## Toward a relational health economy
 
+If digital healthcare is ever to fulfil its promise, the reimbursement model must move from paying for isolated evidence to paying for systemic outcomes.
+
+We do not need more prescription apps that mimic paper medical diaries. We need regulatory frameworks that recognise that software creates value through network effects, operational fluidity, and continuous feedback loops. Until health insurers stop treating software like a digital pill, they will continue paying for technology that nobody uses.

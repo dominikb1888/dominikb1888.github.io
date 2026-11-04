@@ -1,6 +1,6 @@
 baseURL = "https://dominikboehler.de"
 locale = "en-us"
-title = "Dominik Böhler"
+title = "Beneath the Veneer"
 theme  = "archie"
 publishDir = "docs"
 copyright = "Dominik Boehler"
@@ -8,9 +8,6 @@ enableGitInfo = true
 gitRepo = "https://github.com/dominikb1888/dominikb1888.github.io"
 
 pagination.pagerSize = 5
-
-  mode = "auto"
-  subtitle = "Understanding the world from scratch."
 
 # Author config
 [author]
@@ -28,10 +25,11 @@ pagination.pagerSize = 5
   posts = ":year/:month/:filename"
 
 [params]
-  # LoveIt theme version
-  version = "0.2.X"
-  description = "Cognitive Organizing"
+  mode = "auto"
+  subtitle = "De-abstracting Software Development, Digital Health and Distributed Organizing"
+  description = "From first principles by Dominik Bohler"
   images = ["/logo.png"]
+  customcss = ["css/main_override.css"]
 
 [[params.social]]
   name = "Twitter"
@@ -159,6 +157,9 @@ name = "About"
 url = "/about"
 weight = 3
 # Markup related configuration in Hugo
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
 [markup.highlight]

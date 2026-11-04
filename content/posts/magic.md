@@ -1,59 +1,48 @@
 ---
-title: "Magic"
+title: "The Friction of Magic"
 date: 2021-07-07T23:12:55+02:00
 draft: false
 ---
 
-# Magic
+In a documentary recording the agonisingly slow creation of their fourth album, Eirik Glambek Bøe of Kings of Convenience articulates a paradox familiar to anyone who has ever tried to manufacture inspiration on a deadline:
 
-Looking at the new album of Kings of Convenience was a must for me. However, looking at their approach and creative process as show in this documentary was even more of an inspiration than their music: https://www.youtube.com/watch?v=sjau6qZKruE
+> *"Strings touching nails sometimes make ugly sounds. You can't consciously create magic. It has to happen at the moment when you let go. It's a bit like falling asleep—you can't force yourself to fall asleep."*
 
-One line by Eirik in this documentary says it all and should not only help artists, but everyone approaching their work and life (any difference, ey?) in an emotional and intuitive way. Aren't all truly great performances based on this after all?
+Watching two Norwegian musicians fuss over microphone placement for years only to conclude that perfection requires surrendering control is compelling. Watching modern organisations attempt the exact opposite is tragic.
 
-Ok, ok, here are these lines:
-
-Strings touching nails sometimes make ugly sounds.
-You can't consciously create magic.
-It has to happen at the moment when you let go.
-It's a bit like falling asleep, you can't fall asleep.
+Corporate life and higher education share a foundational delusion: the belief that extraordinary outcomes can be reverse-engineered into a repeatable syllabus. We appoint heads of innovation, write rubrics for creative thinking, and commission slide decks on disruption. In doing so, we confuse the management of routine with the conditions for discovery.
 
 
-# Learning Magic - One 1% for once
+## The tyranny of the normal distribution
 
-Often in business and especially in innovation management, I feel that we are merely touching the surface of intuitive action. Their are lots of people talking about magic, but few really practicing it so to say. One of the reasons may be that the social contracts we are living in our organizations defy intuition. Is it really true that reason kills creativity? Or is reason the reason for creativity? Another reason may reside in the competencies though. Not many people have been taught to embrace intuition. Schools (or universities...) are the worst place for this, few people really excel at music, art or sports. So, is our education system focussing on administering the medocricity of the masses? I don't think so. I even think it is very dangerous to think so.
+Most institutional architecture exists for good reason: to compress variance. A hospital, an airline, or an auditing firm must systematically eliminate unpredictability. Their survival depends on standard operating procedures. The bell curve is their friend; the tails are where disasters happen.
 
+The trouble begins when this mindset colonises domains governed by power laws. Entrepreneurship, art, and genuine strategic innovation do not belong to the fat middle of the normal distribution. They are extreme-tail phenomena. 
 
-## The 1%
-
-If we do believe in the decisive 1%. That last piece of sweat (or genius as you wish) truly great performances need, we need to assume that this greatness can also be achieved by anybody at any moment in time. Heureka moments are not following a standard normal distribution.
-
-
-## The One
-
-Next to the power of the 1%, our organizations often underestimate the power of the "one". One person on a mission, can change the face of the planet. You cannot infuse intrinsic action, there may be surroundings to nurture this. However, rarely they are truly seen anywhere outside early-stage start-ups.
+You cannot reach the far-right tail through compliance. When business schools teach “entrepreneurship” as a sequence of business model canvases and discounted cash-flow calculations, they are not teaching people to create value. They are teaching them to sound plausible to credit committees. They are training people to avoid the ugly scraping of the nail on the string—unaware that without the friction, there is no sound at all.
 
 
-## The Once
+## The limits of the lecture hall
 
-Just as trying to capture time, creativity cannot be repeated. Momentum is as much part of the creative process as anything else.
+This was the quiet revelation of my own student years. Whatever useful instincts I developed did not originate in lecture theatres; they were forged as a self-employed web developer. 
 
+The difference was not curriculum; it was stakes. In a university seminar, an error earns a red mark on a rubric; in the market, an error crashes a production database on a Friday evening with an angry client on the telephone. The market does not care about your theoretical framework. It provides immediate, unvarnished, and often painful feedback. It forces you to develop intuition because procedure alone is too slow.
 
-# Practicing Magic
-
-So, how can we deliberately pass on the craft of magic to others? Can it be taught? Certainly not in a traditional sense. Telling people about magic and the statistical facts it is bound to, will at most create attention, maybe astonishment. What it needs though is action. A flipped model of teaching. Yes, there is flipped classroom as a didactic method to help encourage this. But just turning the classroom on its head within the meta-theoretical framework of lecturing as teaching will not cut it. We need to embrace an action-oriented approach right from the start. The boundary conditions actually matter a lot more than the actual content.
-
-The question is how can we create environments that encourage people to attempt hearing nails touching strings, how can we be a mentor on the way to more disciplined perfection? Certainly not when we face a group sitting in front of listening or trying to engage in a rational argument. We can raise clerks or politicians that way - both of which the world has more than enough (I didn't say good ones!). There's also the option to spit out the one or the other strategy consultant. What all three types have in common though they do not really stand out for being risk-taking or inspirational. Can we expect great works for art, design, or entrepreneurship from them?
+Traditional pedagogy inverts this. It assumes that knowledge precedes action: first understand the theory, then execute the practice. In creative and entrepreneurial endeavours, the arrow of causality points the other way. Action generates friction; friction forces reflection; reflection, compounded over time, yields intuition.
 
 
-## Experiential and project-based learning
+## Engineering consequence
 
-The changing moment in my learning journey was a reflection I did relatively early in my studies. Being self-employed as a web developer taught me a lot more (and a lot more interesting things) than anything I had heard at university back then. It was real, personal, and full of pressure and risk. I made good projects and terrible ones. I would always learn though, because I was in the field and the learning experience was tailored by me (not to me!). In fact, without knowing the term, I always practiced learning-by-earning.
+If you cannot teach magic, can you cultivate it?
 
-How to implement these ideas in a curriculum? It is simple: Provide real-world challenges and regular feedback. At best, students bring their own entrepreneurial projects. Sometimes it is nice to encourage directions into certain markets or technologies. What it needs in addition is resource abundance. Access to workshops, prototyping materials, industry experts, and maybe even a little budget.
+Not through lecturing, and certainly not by wrapping traditional material in fashionable buzzwords. Turning a lecture into a video and calling it a "flipped classroom" leaves the underlying flaw untouched: the student remains an observer rather than an agent.
 
+To educate an entrepreneur, one must construct an environment that mimics the unforgiving nature of the real world:
 
-## True Entrepreneurs will stay
+1. **Trade case studies for skin in the game.** Case studies teach retrospective rationalisation. Students learn how someone else solved a past problem with complete information. Provide them instead with a small budget, an unresolved problem, and an external audience. Let them experience the nausea of uncertain decisions.
+2. **Shorten the feedback loop.** A semester-end examination is an autopsy. Feedback must be frequent, public, and delivered by reality (users, prototypes, paying customers) rather than by an academic grading against an answer key.
+3. **Protect the variance.** If every student project succeeds, the course has failed. An environment that tolerates no failures will produce only consensus-driven mediocrity. 
 
-You may say that this doesn't raise true entrepreneurs. They would overcome all these boundaries anyways. I am with you. However, most of what is taught in entrepreneurship education is not entrepreneurship. From my experience it is self-reflection and team work. Increase the frequency of these two elements by offering many project settings to learn from is key. The true entrepreneurs will stay even after failing over and over again. The others will be a lot clearer about which job to get.
+The true test of entrepreneurial education is not how many startups emerge with glossy pitch decks. It is whether students learn to distinguish between the artificial comfort of procedure and the uncomfortable discipline of real work. 
 
-All of them will know which magic tricks they feel comfortable in performing.
+They must learn to tolerate the awful, scraping noise of their own fingers fumbling on the frets—long enough for the music to happen.
