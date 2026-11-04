@@ -156,7 +156,7 @@ header .main a {
   top: -0.15em;
 }
 
-header .main a:before {
+header:before {
     content: ".//\200a\200a\200a\200a\200a\200a. ";
     margin-left: -2.5em;
     color: red;
