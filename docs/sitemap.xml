@@ -2,51 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://dominikboehler.de/</loc>
     <lastmod>2026-11-03T08:28:30+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2022/02/from-scratch/</loc>
+    <loc>https://dominikboehler.de/2022/02/from-scratch/</loc>
     <lastmod>2026-11-03T08:28:30+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://dominikboehler.de/posts/</loc>
     <lastmod>2026-11-03T08:28:30+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/2021/07/magic/</loc>
+    <loc>https://dominikboehler.de/2021/07/magic/</loc>
     <lastmod>2026-11-03T08:26:13+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://dominikboehler.de/about/</loc>
     <lastmod>2022-02-22T11:45:07+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/legal-notice/</loc>
+    <loc>https://dominikboehler.de/legal-notice/</loc>
     <lastmod>2021-03-09T15:30:57+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/1/01/cognitive_organization/</loc>
+    <loc>https://dominikboehler.de/1/01/cognitive_organization/</loc>
     <lastmod>2026-10-27T10:22:22+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/1/01/theses-for-digital-health/</loc>
+    <loc>https://dominikboehler.de/1/01/theses-for-digital-health/</loc>
     <lastmod>2024-11-24T16:09:37+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://dominikboehler.de/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://dominikboehler.de/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
