@@ -141,7 +141,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 1em 0 3rem 0;
+  margin: 3rem 0;
   line-height: 2.5em;
 }
 
