@@ -34,6 +34,7 @@
   enterShell = ''
     hello         # Run scripts directly
     git --version # Use packages
+    git submodule update --init --recursive
   '';
 
   # https://devenv.sh/tasks/
